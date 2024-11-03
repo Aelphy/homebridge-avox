@@ -31,13 +31,15 @@
   },
   "dependencies": {
     "@abandonware/noble": "^1.9.2-25",
-    "crypto-js": "^4.2.0"},
+    "crypto-js": "^4.2.0",
+    "dbus-native": "^0.0.3"
+  },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.8.6",
     "eslint": "^9.14.0",
-    "homebridge": "^2.0.0-beta.0",
+    "homebridge": "1.6.1",
     "nodemon": "^3.1.7",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
