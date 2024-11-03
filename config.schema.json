@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "AvoxHomebridgePlugin",
   "pluginType": "platform",
   "singular": true,
   "strictValidation": false,
@@ -10,7 +10,39 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "Avox Dynamic Platform"
+      },
+      "meshName": {
+        "title": "Mesh Network Name",
+        "type": "string",
+        "required": true,
+        "description": "The name of the mesh network the devices belong to."
+      },
+      "meshPassword": {
+        "title": "Mesh Password",
+        "type": "string",
+        "required": true,
+        "description": "The password for the mesh network."
+      },
+      "devices": {
+        "title": "Devices",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Device Name",
+              "type": "string",
+              "required": true
+            },
+            "macAddress": {
+              "title": "MAC Address",
+              "type": "string",
+              "required": true,
+              "description": "The MAC address of the device."
+            }
+          }
+        }
       }
     }
   }
